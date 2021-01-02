@@ -1,6 +1,6 @@
 # esp-weather-station
 
-Cheap Weather Station ($5) 
+Cheap Weather Station ($10) 
 - ESP8266
 - BME280 Sensor (Temperature, Humidity, Pressure)
 - 18650 Battery

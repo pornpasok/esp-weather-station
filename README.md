@@ -14,6 +14,7 @@ Example: https://tonofarm.herokuapp.com/
 See more information in my blog ..
 https://ton.packetlove.com/blog/
 
+![Cheap ESP Weather Station](images/esp-weather-station.jpg)
 
 ![Dashboard](images/dashboard01.png)
 

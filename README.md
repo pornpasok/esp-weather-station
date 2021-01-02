@@ -9,19 +9,17 @@ Options
 - Solar Panel
 - TP4056 1A Micro USB Battery Charger
 
+Example: https://tonofarm.herokuapp.com/
+
+See more information in my blog ..
+https://ton.packetlove.com/blog/
+
+
 ![Dashboard](images/dashboard01.png)
 
 ![Dashboard](images/dashboard02.png)
 
 ![Dashboard](images/dashboard03.png)
 
-Example: https://tonofarm.herokuapp.com/
-
-```
-
-# See more information in my blog ..
-https://ton.packetlove.com/blog/
-
-```
 
 Source: https://RandomNerdTutorials.com/cloud-weather-station-esp32-esp8266/

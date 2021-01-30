@@ -15,6 +15,7 @@ CREATE TABLE `SensorData` (
   `value2` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
   `value3` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
   `value4` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value5` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
   `reading_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

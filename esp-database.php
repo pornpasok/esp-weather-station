@@ -1,6 +1,6 @@
 <?php
+  // REPLACE with your Host name
   $servername = "HOSTNAME";
-
   // REPLACE with your Database name
   $dbname = "DBNAME";
   // REPLACE with Database user
@@ -8,7 +8,7 @@
   // REPLACE with Database user password
   $password = "PASSWORD";
 
-  function insertReading($sensor, $location, $value1, $value2, $value3, $value4) {
+  function insertReading($sensor, $location, $value1, $value2, $value3, $value4, $value5) {
     global $servername, $username, $password, $dbname;
 
     // Create connection
@@ -18,8 +18,8 @@
       die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "INSERT INTO SensorData (sensor, location, value1, value2, value3, value4)
-    VALUES ('" . $sensor . "', '" . $location . "', '" . $value1 . "', '" . $value2 . "', '" .$value3 . "', '" . $value4 . "')";
+    $sql = "INSERT INTO SensorData (sensor, location, value1, value2, value3, value4, value5)
+    VALUES ('" . $sensor . "', '" . $location . "', '" . $value1 . "', '" . $value2 . "', '" .$value3 . "', '" . $value4 . "', '" . $value5 . "')";
 
     if ($conn->query($sql) === TRUE) {
       return "New record created successfully";
@@ -40,7 +40,7 @@
       die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "SELECT id, sensor, location, value1, value2, value3, value4, reading_time FROM SensorData order by reading_time desc limit " . $limit;
+    $sql = "SELECT id, sensor, location, value1, value2, value3, value4, value5, reading_time FROM SensorData order by reading_time desc limit " . $limit;
     if ($result = $conn->query($sql)) {
       return $result;
     }
@@ -61,7 +61,7 @@
       die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "SELECT id, sensor, location, value1, value2, value3, value4, reading_time FROM SensorData order by reading_time desc limit " . $limit;
+    $sql = "SELECT id, sensor, location, value1, value2, value3, value4, value5, reading_time FROM SensorData order by reading_time desc limit " . $limit;
     if ($result = $conn->query($sql)) {
       return $result;
     }
@@ -81,7 +81,7 @@
       die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "SELECT id, sensor, location, value1, value2, value3, value4, reading_time FROM SensorData order by reading_time desc limit 1" ;
+    $sql = "SELECT id, sensor, location, value1, value2, value3, value4, value5, reading_time FROM SensorData order by reading_time desc limit 1" ;
     if ($result = $conn->query($sql)) {
       return $result->fetch_assoc();
     }

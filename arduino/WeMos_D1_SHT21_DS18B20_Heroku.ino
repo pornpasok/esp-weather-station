@@ -13,10 +13,10 @@ DallasTemperature sensors(&oneWire);
 
 long timeout; // Time to WiFi Connect
 
-const char* ssid     = "SookYenFarm";    // SSID Wifi
-const char* password = "0863741677";   // Password Wifi
-const char* host = "http://tonofarm.herokuapp.com/esp-post-data.php";
-const char* api   = "tonofarm.io";  //API Key
+const char* ssid = "YOUR-WIFI-SSID";
+const char* password = "YOUR-WIFI-PASSWORD";
+const char* host = "http://app-name.herokuapp.com/esp-post-data.php";
+const char* api   = "API-KEY";  //API Key
 String sensorLocation = "12.7581423,102.1468503";
 
 // VBatt

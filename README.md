@@ -8,6 +8,8 @@ Cheap Weather Station ($10)
 Options
 - Solar Panel
 - TP4056 1A Micro USB Battery Charger
+- SHT21 (Temperature, Humidity)
+- DS18B20 (Temperature)
 
 Example: https://tonofarm.herokuapp.com/
 
